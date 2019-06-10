@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: react-on-rails_production
-  username: react-on-rails
-  password: <%= ENV['REACT-ON-RAILS_DATABASE_PASSWORD'] %>
+  database: react-on-rails_development
+  username: canvas
+  password: canvas

@@ -1,5 +1,6 @@
 import React from 'react'
-import TestImage from '../images/stamp.jpg'
+import TestImage from '../images/stamp.jpg';
+import Styles from '../src/TweetBox.module.css'
 export default class TweetBox extends React.Component {
 
     sendTweet(event) {
@@ -11,7 +12,7 @@ export default class TweetBox extends React.Component {
     render () {
         return (
             <div className="row">
-                <img src={TestImage} />
+                <img className={Styles.stampImage}  src={TestImage} />
                 <form onSubmit={this.sendTweet.bind(this)}>
                     <div className="input-field">
                         <textarea ref="tweetTextArea" className="materialize-textarea" />
