@@ -1,36 +1,32 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
-import Tweetbox from '../components/TweetBox'
-import TweetList from '../components/TweetList'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Index from '../components/Index';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Follow from "../components/Follow";
 
-class Main extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {tweetsList: []};
-  }
-
-  addTweet(tweetToAdd) {
-    let newTweetList = this.state.tweetsList;
-    newTweetList.unshift({id: Date.now(),name: 'sam', body: tweetToAdd});
-    this.setState({tweetsList: newTweetList});
-  }
-  render() {
-      return(
-          <div className="container">
-            <Tweetbox sendTweet={this.addTweet.bind(this)} />
-            <TweetList tweets={this.state.tweetsList} />
-          </div>
-      );
-  }
+class App extends React.Component{
+    render(){
+        return(
+            <div>
+                {this.props.children}
+            </div>
+        )
+    }
 }
 
 let documentReady = () => {
-  ReactDOM.render(
-    <Main />,
-      document.getElementById('react'),
-  );
+    let reactNode = document.getElementById('react');
+    if (reactNode){
+        ReactDOM.render(
+            <Router>
+                <Route path="/"/>
+                <Route path="/follow" component={Follow} />
+                <Index />
+            </Router>
+            ,
+            reactNode,
+        );
+    }
 };
 
 $(documentReady);

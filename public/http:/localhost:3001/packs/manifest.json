@@ -1,0 +1,55 @@
+{
+  "API.js": "/http://localhost:3001/packs/js/API-c9d8ef9c4cadac5c50db.js",
+  "API.js.map": "/http://localhost:3001/packs/js/API-c9d8ef9c4cadac5c50db.js.map",
+  "application.js": "/http://localhost:3001/packs/js/application-e1c90af91a5227ffbe26.js",
+  "application.js.map": "/http://localhost:3001/packs/js/application-e1c90af91a5227ffbe26.js.map",
+  "constants.js": "/http://localhost:3001/packs/js/constants-fdb6ad179529519ed590.js",
+  "constants.js.map": "/http://localhost:3001/packs/js/constants-fdb6ad179529519ed590.js.map",
+  "dispacther.js": "/http://localhost:3001/packs/js/dispacther-c3aa3bf7ce71596a3272.js",
+  "dispacther.js.map": "/http://localhost:3001/packs/js/dispacther-c3aa3bf7ce71596a3272.js.map",
+  "entrypoints": {
+    "API": {
+      "js": [
+        "/http://localhost:3001/packs/js/API-c9d8ef9c4cadac5c50db.js"
+      ],
+      "js.map": [
+        "/http://localhost:3001/packs/js/API-c9d8ef9c4cadac5c50db.js.map"
+      ]
+    },
+    "application": {
+      "js": [
+        "/http://localhost:3001/packs/js/application-e1c90af91a5227ffbe26.js"
+      ],
+      "js.map": [
+        "/http://localhost:3001/packs/js/application-e1c90af91a5227ffbe26.js.map"
+      ]
+    },
+    "constants": {
+      "js": [
+        "/http://localhost:3001/packs/js/constants-fdb6ad179529519ed590.js"
+      ],
+      "js.map": [
+        "/http://localhost:3001/packs/js/constants-fdb6ad179529519ed590.js.map"
+      ]
+    },
+    "dispacther": {
+      "js": [
+        "/http://localhost:3001/packs/js/dispacther-c3aa3bf7ce71596a3272.js"
+      ],
+      "js.map": [
+        "/http://localhost:3001/packs/js/dispacther-c3aa3bf7ce71596a3272.js.map"
+      ]
+    },
+    "main": {
+      "js": [
+        "/http://localhost:3001/packs/js/main-54779314a0ac18cbcca6.js"
+      ],
+      "js.map": [
+        "/http://localhost:3001/packs/js/main-54779314a0ac18cbcca6.js.map"
+      ]
+    }
+  },
+  "main.js": "/http://localhost:3001/packs/js/main-54779314a0ac18cbcca6.js",
+  "main.js.map": "/http://localhost:3001/packs/js/main-54779314a0ac18cbcca6.js.map",
+  "media/images/stamp.jpg": "/http://localhost:3001/packs/media/images/stamp-48f10186.jpg"
+}
