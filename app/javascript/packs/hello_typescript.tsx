@@ -3,22 +3,42 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Provider } from 'react-redux'
+import {combineReducers, createStore, Reducer} from 'redux'
 import { Button } from '@material-ui/core'
-import styles from '../src/TweetBox.module.css'
+import {makeStyles} from "@material-ui/styles";
+import tweetStyles from '../src/TweetBox.module.css'
+import Hello from '../components/Hello'
+import cx from 'classnames'
 
 interface  Props {
     message: string
 }
 
-class App extends React.Component<Props>{
-    render(){
+const useStyles = makeStyles(() => ({
+    test:{background: 'red'}
+}))
+
+const reducer:Reducer<{hey:string} | undefined,any> = (s,a):{hey:string} => {
+    return {hey: 'hello'}
+}
+
+const store = createStore(combineReducers({hey:reducer}))
+
+
+
+const App = (props: Props) =>{
+
+        const classes = useStyles('')
         return(
-            <div>
-                <Button className={styles.stampImage} >Click Here</Button>
-                {this.props.message}
+            <Provider store={store}>
+            <div className={classes.test}>
+                <Hello />
+                <Button className={cx(tweetStyles.stampImage,'hello')} >Click Here</Button>
+                {props.message}
         </div>
+        </Provider>
     )
-    }
 }
 
 let documentReady = () => {
