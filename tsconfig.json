@@ -5,6 +5,7 @@
     "experimentalDecorators": true,
     "lib": ["es6", "dom"],
     "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
     "module": "es6",
     "moduleResolution": "node",
     "sourceMap": true,

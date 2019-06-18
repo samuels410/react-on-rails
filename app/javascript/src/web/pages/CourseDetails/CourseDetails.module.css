@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 40px 0;
+}
+
+.tabs {
+  box-shadow: inset 0 -1px 0 0 rgba(208, 201, 214, 0.4);
+}
+
+.courseInfo {
+  margin: 10px 0;
+}
+
+.courseBody {
+  flex: 1;
+  margin: 20px 0;
+  padding: 40px;
+  min-height: 400px;
+}
+
+.tab {
+  font-weight: 600;
+  color: var(--dark-greyblue);
+}
+.tabContentWrapper {
+  color: var(--eggplant);
+}
+
+.indicator {
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  height: 3px;
+}

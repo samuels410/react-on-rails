@@ -1,0 +1,105 @@
+.container{
+    display: flex;
+    /* flex:1; */
+    flex-direction: column;
+}
+.expandedPanelContent{
+    display: flex;
+    flex-direction: column     
+}
+.moduleIcon{
+    height:24px;
+    width:24px
+}
+.icon{
+    height:16px;
+    width:16px
+}
+.expansionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.itemTitle{
+    padding-left: 20px;
+    font-size: 14px;
+}
+.activeItemTitle{
+    font-weight: 600;
+}
+a.activeLink {
+    color:var(--clear-blue);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    position: relative;
+}
+.verticalLine{
+    background-color:  rgba(0, 0, 0, 0.12);
+    width:2px;
+    position: absolute;
+}
+.moduleVerticalLine{
+    top:-17px;
+    left:26px;
+    height:25px;
+}
+.newHeight{
+    height: 23px;
+}
+.itemVerticalLine{
+    margin-left: 14%;
+    height:25px;
+    top:23px;
+}
+.individualLine{
+    display: none;
+    margin-left:31px;
+}
+.plusSkew{
+    transform: skewX(35deg);
+    top:-15px;
+    height:22px;
+    left:4px;
+}
+.minusSkew{
+    transform: skewX(-25deg);
+    top:23px;
+    height:33px;
+    left:3px;
+}
+.module{
+    background-color: transparent;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.module::before{
+    opacity: 0;
+}
+.module.moduleExpanded{
+    margin:0px
+}
+.module.moduleExpanded::before{
+    opacity: 0;
+}
+.container > :first-child .moduleVerticalLine{
+    display: none;
+}
+.moduleExpanded + .module .verticalLine{
+    display: none
+}
+.expandedPanelContent:first-of-type .plusSkew {
+    display: block;
+}
+.module:not(:last-of-type) > .expandedSummaryRoot:first-of-type ~ div .expandedPanelContent:last-child .item .minusSkew
+{
+    display: block;
+}
+.expandedPanelContent:last-of-type .itemVerticalLine {
+    display: none;
+}

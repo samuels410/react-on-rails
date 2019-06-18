@@ -1,0 +1,5 @@
+.itemLink,
+.itemLink:hover {
+  text-decoration: none;
+  display: block;
+}

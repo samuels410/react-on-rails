@@ -1,0 +1,11 @@
+.container {
+  padding-left: 10px;
+}
+
+.imageContainer {
+  margin-left: -10px;
+}
+
+.image {
+  border-radius: 50%;
+}

@@ -1,0 +1,9 @@
+.itemMetaIcon {
+  composes: itemMetaIcon from '../CourseItem.module.css';
+  display: block;
+  text-align: center;
+}
+
+.loader {
+  margin: auto;
+}

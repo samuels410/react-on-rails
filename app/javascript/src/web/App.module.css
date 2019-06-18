@@ -1,0 +1,92 @@
+:root {
+  --font-size: 16px;
+  font-size: var(--font-size);
+
+  /**
+   * Header
+   */
+  --header-height: 64px;
+
+  /**
+     * Content
+     **/
+  --content-background: #f9fafb;
+
+  /** 
+     * Footer 
+     **/
+  --footer-background: var(--white);
+}
+
+:global(.multiline-limit-body1) {
+  /* use this value to count block height */
+  line-height: 1.5rem;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3rem;
+}
+
+:global(.multiline-limit-body2) {
+  /* use this value to count block height */
+  line-height: 1.43rem;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 2.5rem;
+}
+
+:global(.multiline-limit) {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+  opacity: 0.8;
+}
+/* create the ... */
+:global(.multiline-limit):before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+:global(.multiline-limit):after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+:global(html) {
+  height: 100%;
+}
+
+:global(body) {
+  height: 100%;
+}
+
+:global(#root) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+:global(a),
+:global(a):hover,
+:global(a):active,
+:global(a):visited {
+  text-decoration: none;
+}

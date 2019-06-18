@@ -1,0 +1,5 @@
+.progressIcon {
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--pastel-blue) inset;
+}

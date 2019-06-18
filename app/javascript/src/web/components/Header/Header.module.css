@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex: 1
+}
+a.activeLink {
+  color: var(--eggplant);
+}

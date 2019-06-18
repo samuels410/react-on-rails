@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: stretch;
+}
+.cardImage {
+  min-width: 250px;
+  min-height: 150px;
+}
+
+.cardContent {
+  padding: 20px 30px;
+  min-width: 0;
+}
+
+.sourceText {
+  color: var(--eggplant);
+  opacity: 0.4;
+}
+
+.articleTitle {
+  width: 100%;
+}

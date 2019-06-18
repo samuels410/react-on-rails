@@ -1,0 +1,35 @@
+.container {
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  flex: 1;
+}
+
+.closeIcon {
+}
+
+.commentsBox {
+  min-width: 400px;
+}
+
+.content {
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formControl {
+  margin: 10px 0 !important;
+}
+
+.formButton {
+  border-radius: 24px !important;
+  margin-left: 10px !important;
+}

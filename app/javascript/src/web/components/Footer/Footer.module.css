@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 20px 80px;
+  background-color: var(--footer-background);
+}
+
+.footerLinks {
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footerLink,
+.footerLink:hover,
+.footerLink:active,
+.footerLink:visited {
+  color: var(--grey-blue);
+  text-decoration: none;
+}

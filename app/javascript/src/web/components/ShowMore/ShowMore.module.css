@@ -1,0 +1,12 @@
+.container {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 505;
+  transform: translate(-50%, -50%);
+}

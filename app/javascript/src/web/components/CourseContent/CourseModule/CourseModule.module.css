@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.moduleName {
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.container.hasMore > div:last-of-type::after {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.6)
+  );
+}

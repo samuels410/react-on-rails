@@ -1,0 +1,81 @@
+.container {
+  padding: 10px 0;
+  margin: -1px 0 0 0;
+  align-items: center;
+  border: solid 1px #ecebed;
+  position: relative;
+  max-width: 100%;
+}
+.overdue {
+  background: var(--light-pink);
+}
+
+/** Item Icon: Icon denoting the type of Item */
+.itemIconGrid {
+  flex-basis: 120px;
+}
+.itemIconWrapper {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  border-radius: 50px;
+  border: 1px solid #444;
+  opacity: 0.8;
+  position: relative;
+}
+.itemIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** Item Title  */
+.itemTitleGrid {
+  flex: 1;
+  padding: 0 10px;
+}
+.itemTitle {
+  font-weight: 600;
+  opacity: 0.8;
+  color: var(--grape);
+}
+
+/** Item Status Description */
+.itemSecondaryInfoGrid {
+  max-width: 300px;
+}
+.itemSecondaryInfoText {
+  opacity: 0.56;
+  font-weight: 600;
+  color: var(--grape);
+}
+
+/** Item Status Icon / CTA Icon  */
+.itemStatusIconGrid {
+  text-align: center;
+}
+.itemStatusButton {
+  padding: 12px;
+  cursor: pointer;
+  margin: auto;
+}
+.itemStatusIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/** Item Link to Course Consumption Page */
+.courseItemLink {
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.courseItemAboveLink {
+  z-index: 2;
+}

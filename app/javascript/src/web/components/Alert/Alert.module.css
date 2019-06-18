@@ -1,0 +1,37 @@
+.alertContent {
+  background-color: var(--white);
+}
+.success {
+  color: var(--green-blue);
+  border-left: 5px solid var(--green-blue);
+}
+
+.error {
+  color: var(--rosy-pink);
+  border-left: 5px solid var(--rosy-pink);
+}
+
+.warning {
+  color: var(--light-mustard);
+  border-left: 5px solid var(--light-mustard);
+}
+
+.closeIcon {
+  color: var(--grey-blue);
+  font-size: 20;
+}
+
+.messageIcon {
+  opacity: 0.9;
+  margin-right: 8px;
+  font-size: 20;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  color: var(--black);
+}

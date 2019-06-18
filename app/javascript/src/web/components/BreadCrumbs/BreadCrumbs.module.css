@@ -1,0 +1,8 @@
+.pathLink,
+.pathLink:hover,
+.pathLink:active,
+.pathLink:visited {
+  color: var(--grey-blue);
+  text-decoration: none;
+  font-size: 14px
+}

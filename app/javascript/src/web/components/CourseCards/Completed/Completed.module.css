@@ -1,0 +1,39 @@
+.card {
+  composes: card from '../CourseCards.module.css';
+}
+.cardMedia {
+  composes: cardMedia from '../CourseCards.module.css';
+}
+.cardDesc {
+  composes: cardDesc from '../CourseCards.module.css';
+}
+.cardLink {
+  composes: cardLink from '../CourseCards.module.css';
+}
+.cardContent {
+  composes: cardContent from '../CourseCards.module.css';
+}
+.cardTitle {
+  composes: cardTitle from '../CourseCards.module.css';
+}
+.metaContainer {
+  composes: metaContainer from '../CourseCards.module.css';
+}
+.metaLeftBlock {
+  composes: metaLeftBlock from '../CourseCards.module.css';
+  display: flex;
+  align-items: center;
+  color: var(--green-blue);
+}
+.metaRightBlock {
+  composes: metaRightBlock from '../CourseCards.module.css';
+}
+
+.doneIcon {
+  color: var(--dark-cyan);
+  width: 1.5rem;
+  margin-right: 5px;
+  font-size: 24px;
+  align-self: normal;
+  display: flex;
+}

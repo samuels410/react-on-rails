@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  display: flex;
+}
+.cardMedia {
+  flex-basis: 180px;
+  background-image: linear-gradient(225deg, #196ae5 0%, #6979f8 100%);
+}
+.cardDesc {
+  margin-bottom: 20px;
+}
+.cardLink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.cardContent {
+  flex: 1;
+  padding: 16px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+.cardTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.25rem;
+}
+.metaContainer {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  border-top: 1px solid #ece9f1;
+  justify-content: space-between;
+}
+
+.metaLeftBlock {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 70%;
+}
+
+.metaRightBlock {
+  margin-left: 0;
+}

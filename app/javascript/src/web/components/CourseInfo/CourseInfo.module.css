@@ -1,0 +1,13 @@
+.progressValue {
+  text-align: center;
+  color: var(--green-blue);
+  margin-bottom: 5px;
+}
+
+.courseMarks {
+  text-align: center;
+}
+
+.progressGrid {
+  padding-top: 0 !important;
+}

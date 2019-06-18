@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+}
+.paper{
+    width:800px;
+    /* height:500px; */
+    height:100%;
+    display: flex;
+    flex:1;
+    /* align-items: center; */
+}
+.tab{
+    font-size: 13px;
+}
+.drawerIcons{
+    position: absolute;
+    top: 60%;
+    width:24px;
+    height:32px;
+    border: 1px solid #ccd0d8;
+    border-left: 0px;
+    margin-left:-1px;
+    background-color: var(--white);
+    display: flex;
+}

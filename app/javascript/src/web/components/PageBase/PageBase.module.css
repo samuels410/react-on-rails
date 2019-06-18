@@ -1,0 +1,6 @@
+.container {
+  margin-top: var(--header-height);
+  margin-bottom: 20px;
+  background-color: var(--content-background);
+  flex: 1;
+}

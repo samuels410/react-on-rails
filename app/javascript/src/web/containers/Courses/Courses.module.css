@@ -1,0 +1,19 @@
+.container {
+  margin: 0;
+  height: 100%;
+}
+
+.listItem {
+  margin-top: 20px;
+}
+.listItem:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.courseCategoryContainer {
+  margin-top: 40px;
+}
+
+.courseCategoryHeader {
+  margin: 20px;
+}

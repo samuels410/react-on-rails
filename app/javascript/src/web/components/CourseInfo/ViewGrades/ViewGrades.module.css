@@ -1,0 +1,24 @@
+.gradeBookContainer {
+  padding: 20px;
+  min-height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.gradeBook {
+  flex: 1;
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 20px 0;
+}
+
+.viewGradesButton {
+  text-transform: unset;
+}
+.viewGradesText {
+  font-weight: 600;
+}
+
+.popover {
+  z-index: 1;
+}
